@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
 
   def answers
     #will automatically render views/welcome/answers.html.erb
+    @questions = Question.all
   end
 
   def contact
