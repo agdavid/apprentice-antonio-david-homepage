@@ -1,24 +1,22 @@
-# README
+= AntonioDavidSaysHey!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== About
 
-Things you may want to cover:
+This homepage was created in response to the rad StandardCo.de challenge for their apprenticeship.
 
-* Ruby version
+There were a few general requirements, such as: (1) configure custom routes; (2) use links; (3) create a simple databse for questions and answers.  For specific details please look at the file in this repo StandardCodeSPECS.md.
 
-* System dependencies
+== Usage
+The application can be run locally on your localhost:
+1. Clone it (<tt>git clone git@github.com:agdavid/apprentice-antonio-david-homepage.git</tt>)
+2. Run bundler(<tt>bundle install</tt>)
+3. Migrate the database (<tt>rake db:migrate</tt>)
+4. Seed the database (<tt>rake db:seed</tt>)
+5. Run your server! (<tt>rails s</tt>)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Contributing
+1. Fork it (https://github.com/agdavid/allergy-free-meals-rails-application/fork)
+2. Create your feature branch (<tt>git checkout -b my-new-feature</tt>)
+3. Commit your changes (<tt>git commit -am 'Add some feature'</tt>)
+4. Push to the branch (<tt>git push origin my-new-feature</tt>)
+5. Create a new Pull Request
