@@ -4,7 +4,7 @@
 
 This homepage was created in response to the rad StandardCo.de challenge for their apprenticeship.
 
-There were a few general requirements, such as: (1) configure custom routes; (2) use links; (3) create a simple databse for questions and answers.  For specific details please look at the file in this repo StandardCodeSPECS.md.
+There were a few general requirements, such as: (1) configure custom routes; (2) use links; (3) create a simple database for questions and answers.  For specific details please look at the file in this repo StandardCodeSPECS.md.
 
 == Usage
 The application can be run locally on your localhost:
@@ -20,3 +20,6 @@ The application can be run locally on your localhost:
 3. Commit your changes (<tt>git commit -am 'Add some feature'</tt>)
 4. Push to the branch (<tt>git push origin my-new-feature</tt>)
 5. Create a new Pull Request
+
+== License
+This project was created as part of a coding challenge and is publicly and freely available under {Learn's Educational Content License}[https://learn.co/content-license].
