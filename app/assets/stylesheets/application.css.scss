@@ -18,3 +18,10 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+nav.navbar {
+  background: #340056;
+  a {
+    color: #fafafa;
+  }
+}

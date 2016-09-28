@@ -8,4 +8,8 @@ class WelcomeController < ApplicationController
     #will automatically render views/welcome/answers.html.erb
   end
 
+  def contact
+    #will automatically render views/welcome/answers.html.erb
+  end
+
 end

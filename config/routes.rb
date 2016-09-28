@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root "welcome#home"
 
   get "/answers", to: "welcome#answers"
-  
+  get "/contact", to: "welcome#contact"
 end
