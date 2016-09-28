@@ -5,6 +5,11 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use for icons
 gem 'font-awesome-sass'
+# Use Postgres in production for Heroku
+group :production do 
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
