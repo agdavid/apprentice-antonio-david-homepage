@@ -9,8 +9,10 @@
         <ol class="questions">
           <% @questions.each do |question| %>
           <li>
-            <strong><%= question.content %></strong><br />
+            <strong><%= question.content %></strong><br /><br />
+            <%= question.printed_answer %>
           </li>
+          <br />
           <% end %>
         </ol>
       </div>
