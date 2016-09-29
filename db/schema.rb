@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160928185407) do
+ActiveRecord::Schema.define(version: 20160929004207) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "content"
     t.integer  "question_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "coordinates", force: :cascade do |t|
+    t.decimal  "lat",        precision: 2, scale: 8
+    t.decimal  "lng",        precision: 2, scale: 8
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
   create_table "questions", force: :cascade do |t|
