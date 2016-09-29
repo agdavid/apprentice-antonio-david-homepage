@@ -13,5 +13,5 @@
 //= require jquery
 //= require bootstrap
 //= require jquery_ujs
-//= require welcome
+//= require map
 //= require_tree .
