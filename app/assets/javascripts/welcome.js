@@ -18,8 +18,17 @@ function initMap() {
     this.lng = lng
   };
 
-  $.get("/coordinates.json", function(data) {
-    var coordinate = new Coordinate(data.id, data.lat, data.lng)
-  });
+  Coordinate.prototype.create_marker = function() {
+    debugger;
+  };
+
+  function createCoordinates(data) {
+    for(var i = 0; i < data.length; i++) {
+      var coordinate = new Coordinate(data[i].id, parseFloat(data[i].lat), parseFloat(data[i].lng));
+      debugger;
+    }
+  };
+
+  $.get("/coordinates.json", createCoordinates);
 
 }
