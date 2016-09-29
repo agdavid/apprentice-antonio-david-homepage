@@ -1,12 +1,14 @@
 
 function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+  var atlanta = {lat: 33.76265200, lng: -84.423142};
+  
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: atlanta
+  });
+  
+  var marker = new google.maps.Marker({
+    position: atlanta,
+    map: map
+  });
+}
