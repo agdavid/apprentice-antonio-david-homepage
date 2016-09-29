@@ -4,8 +4,14 @@
     <title>Antonio David - Web Dev</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    
+    <%= javascript_include_tag 'application' %>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW0yhgodxlSGX1XOY584gJJ4VbvtCmM1g&callback=initMap">
+    </script>
+
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   </head>
