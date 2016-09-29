@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Use for Bootstrap styline
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use for icons
@@ -10,6 +9,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+# Use to serialize Rails model instances
+gem 'active_model_serializers'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

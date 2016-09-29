@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   root "welcome#home"
   get "/answers", to: "welcome#answers"
+  resources :coordinates, only: [:index]
 end

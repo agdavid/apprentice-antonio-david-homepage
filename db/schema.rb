@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20160929004207) do
   end
 
   create_table "coordinates", force: :cascade do |t|
-    t.decimal  "lat",        precision: 2, scale: 8
-    t.decimal  "lng",        precision: 2, scale: 8
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.string   "lat"
+    t.string   "lng"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "questions", force: :cascade do |t|
