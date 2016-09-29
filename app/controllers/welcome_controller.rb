@@ -9,8 +9,8 @@ class WelcomeController < ApplicationController
     @questions = Question.all
   end
 
-  def contact
-    #will automatically render views/welcome/answers.html.erb
+  def map
+    #will automatically render views/welcome/map.html.erb
   end
 
 end
