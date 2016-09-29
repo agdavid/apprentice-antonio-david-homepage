@@ -11,4 +11,9 @@ function initMap() {
     position: atlanta,
     map: map
   });
+
+  $.get("/coordinates.json", function(data) {
+    debugger;
+  })
+
 }
