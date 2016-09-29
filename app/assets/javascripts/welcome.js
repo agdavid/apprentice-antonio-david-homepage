@@ -12,8 +12,14 @@ function initMap() {
     map: map
   });
 
+  function Coordinate(id, lat, lng) {
+    this.id = id
+    this.lat = lat
+    this.lng = lng
+  };
+
   $.get("/coordinates.json", function(data) {
-    debugger;
-  })
+    var coordinate = new Coordinate(data.id, data.lat, data.lng)
+  });
 
 }
