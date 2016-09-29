@@ -3,6 +3,9 @@
   <head>
     <title>Antonio David - Web Dev</title>
     <%= csrf_meta_tags %>
+    
+    <!-- additional meta tag to trigger responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     
@@ -17,8 +20,12 @@
   </head>
 
   <body>
-    <%= render 'shared/nav' %>
-    <%= yield %>
+    <!-- additional .wrapper .push and .footer elements for 'sticky footer' -->
+    <div class="wrapper">
+       <%= render 'shared/nav' %>
+      <%= yield %> 
+    </div>
+    <div class="push"></div>
     <%= render 'shared/footer' %>
   </body>
 </html>
