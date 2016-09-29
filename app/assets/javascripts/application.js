@@ -14,4 +14,5 @@
 //= require bootstrap
 //= require jquery_ujs
 //= require map
+//= pagescroll
 //= require_tree .

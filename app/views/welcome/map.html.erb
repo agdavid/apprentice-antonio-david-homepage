@@ -1,10 +1,19 @@
 <div class="main-section">
-  <h1>Welcome to the Map Page for the StandardCo.de Challenge</h1>
+  <h1>Welcome to the Map Page for the StandardCo.de Challenge!</h1>
   <div>
-    <div>Completing this exercise involved the following general steps: </div>
-    <ol>
-      <li></li>
+    <h3>Completing this exercise involved the following general steps: </h3>
+    <br/>
+    <ol class="map-steps">
+      <li><strong>Creating a Migration and Model for Coordinates</strong> - I learned that the string format would be best, otherwise the decimals are lost in serialization.</li>
+      <br/>
+      <li><strong>Creating a Rails API Backend</strong> - My 'go-to' tools were ActiveModel::Serializers and the ActionController #respond_to method to render JSON.</li>
+      <br/>
+      <li><strong>Incorporating the <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">GoogleMaps JavaScript API</a></strong> - The documentation has great examples to teach you how to do both <a href="https://developers.google.com/maps/documentation/javascript/examples/marker-simple" target="_blank">single</a> and <a href="https://developers.google.com/maps/documentation/javascript/tutorials/importing_data" target="_blank"> multiple</a> markers.</li>
+      <br/>
+      <li><strong>Using AJAX and JavaScript Model Objects</strong> - Three steps of making the AJAX request, creating the JS objects through iteration, then calling a method on the prototype created each of the map markers.</li>
     </ol>
   </div>
-  <div id="map"></div>  
+  <br/>
+  <div id="map"></div> 
+  <br/> 
 </div>
