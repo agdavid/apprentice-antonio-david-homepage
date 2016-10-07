@@ -26,6 +26,14 @@
               <div>
                   <% if question.answer %>
                       <%= question.printed_answer %>
+                      <div>
+                          <% if question.answer_author === current_user %>
+                              <ul class="list-inline">
+                                  <li><%= link_to "Edit Answer", edit_answer_path(question.answer)%></li>
+                                  <li><%= link_to "Delete Answer", answer_path(question.answer), method: "DELETE", data: { confirm: "Are you sure?" } %></li>
+                              </ul>
+                          <% end %>
+                      </div>
                   <% else %>
                       ** This question needs to be answered:
                       <%= link_to "Create Answer", new_answer_path(question_id: question), class: "btn btn-primary btn-sm" %> **
