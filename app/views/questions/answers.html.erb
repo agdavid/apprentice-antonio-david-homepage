@@ -11,6 +11,7 @@
           <li>
               <div>
                   <div>
+                     <%= question.question_authorname%> asked: 
                      <strong><%= question.content %></strong>
                   </div>
                   <div>
@@ -25,6 +26,7 @@
               <!-- conditional: show or prompt for answer -->
               <div>
                   <% if question.answer %>
+                      <%= question.answer_authorname %> replied: 
                       <%= question.printed_answer %>
                       <div>
                           <% if question.answer_author === current_user %>
