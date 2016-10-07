@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   root "welcome#home"
   get "/answers", to: "questions#answers"
-  get "/map", to: "welcome#map"
+  get "/map", to: "coordinates#map"
   resources :coordinates, only: [:index]
 end
