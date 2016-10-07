@@ -30,7 +30,9 @@
             </li>
             <!-- Devise user links -->
             <% if user_signed_in? %>
-                <li></li>
+                <li>
+                    <%= link_to "Edit Account", edit_user_registration_path %>
+                </li>
                 <li>
                     <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
                 </li>
