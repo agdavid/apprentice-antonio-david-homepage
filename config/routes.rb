@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root "welcome#home"
   get "/map", to: "coordinates#map"
 
-  resources :questions
+  resources :questions, only: [:new, :create, :edit, :update, :destroy]
   get "/answers", to: "questions#answers"
   
   resources :answers
