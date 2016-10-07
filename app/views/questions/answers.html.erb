@@ -7,13 +7,33 @@
         <br />
         <br />
         <ol class="questions">
-          <% @questions.each do |question| %>
-          <li>
-            <strong><%= question.content %></strong><br /><br />
-            <%= question.printed_answer %>
-          </li>
-          <br />
-          <% end %>
+            <% @questions.each do |question| %>
+              <li>
+                  <div>
+                      <div>
+                         <strong><%= question.content %></strong>
+                      </div>
+                      <div>
+                          <% if question.user === current_user %>
+                              <ul class="list-inline">
+                                  <li><%= link_to "Edit Question", edit_question_path(question)%></li>
+                                  <li><%= link_to "Delete Question", question_path(question), method: "DELETE", data: { confirm: "Are you sure?" } %></li>
+                              </ul>
+                          <% end %>
+                      </div>  
+                  </div>
+                  <!-- conditional: show or prompt for answer -->
+                  <div>
+                      <% if question.answer %>
+                          <%= question.printed_answer %>
+                      <% else %>
+                          ** This question needs to be answered:
+                          <%= link_to "Create Answer", new_answer_path, class: "btn btn-primary btn-sm" %> **
+                      <% end %>
+                  </div>
+              </li>
+              <br />
+            <% end %>
         </ol>
       </div>
     </div>

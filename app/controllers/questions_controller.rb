@@ -15,6 +15,13 @@ class QuestionsController < ApplicationController
     end
 
     def create
+        @question = current_user.questions.build(question_params)
+        if @question.save
+            flash[:success] = "Question successfully added."
+            redirect_to answers_path    
+        else
+            render "new"
+        end
     end
 
     def show
@@ -25,5 +32,10 @@ class QuestionsController < ApplicationController
 
     def destroy
     end
+
+    private
+        def question_params
+            params.require(:question).permit(:content, :user_id)
+        end
     
 end
