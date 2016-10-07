@@ -14,7 +14,7 @@ class Question < ApplicationRecord
         self.answer.user
     end
 
-    def question.answer_authorname
+    def answer_authorname
         self.answer.user.username
     end
 
