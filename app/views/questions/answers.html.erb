@@ -29,7 +29,7 @@
                       <div>
                           <% if question.answer_author === current_user %>
                               <ul class="list-inline">
-                                  <li><%= link_to "Edit Answer", edit_answer_path(question.answer)%></li>
+                                  <li><%= link_to "Edit Answer", edit_answer_path(id: question.answer.id, question_id: question.id)%></li>
                                   <li><%= link_to "Delete Answer", answer_path(question.answer), method: "DELETE", data: { confirm: "Are you sure?" } %></li>
                               </ul>
                           <% end %>

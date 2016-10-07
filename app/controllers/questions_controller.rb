@@ -22,7 +22,7 @@ class QuestionsController < ApplicationController
     end
 
     def edit
-        #only the original user can edit a question
+        #only the original author can edit a question
         if current_user != @question.user
             flash[:warning] = "Sorry. You cannot update that question."
             redirect_to answers_path
