@@ -23,9 +23,13 @@
     <!-- additional .wrapper .push and .footer elements for 'sticky footer' -->
     <div class="wrapper" id="page-top">
         <%= render 'shared/nav' %>
-        <!-- see application_helper.rb -->
-        <%= flash_messages %>
-        <%= yield %> 
+        <div class="main-section">
+            <div class="container">
+              <!-- see application_helper.rb -->
+            <%= flash_messages %>
+            <%= yield %>  
+            </div>
+        </div> 
     </div>
     <div class="push"></div>
     <%= render 'shared/footer' %>

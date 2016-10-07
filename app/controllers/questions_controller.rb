@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+    #For Devise authentication
+    before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
 
     def answers
         #will automatically render views/questions/answers.html.erb

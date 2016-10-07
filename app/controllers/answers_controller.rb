@@ -1,4 +1,6 @@
 class AnswersController < ApplicationController
+    #For Devise authentication
+    before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
     
     def index
     end
