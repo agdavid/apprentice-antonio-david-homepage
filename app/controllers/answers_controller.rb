@@ -3,6 +3,7 @@ class AnswersController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
 
     def new
+        @answer = current_user.answers.build
     end
 
     def create
