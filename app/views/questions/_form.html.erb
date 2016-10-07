@@ -1,0 +1,22 @@
+<%= form_for(@question) do |f| %>
+      
+      <% if @question.errors.any? %>
+          <div id="errors">
+            <h2><%= pluralize(@question.errors.count, "error") %> prevented this Question from being saved:</h2>
+
+            <ul>
+            <% @question.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <br />
+
+        <div class="form-group">
+            <%= f.label :content %>
+            <%= f.text_area :content, class: "form-control" %>
+        </div>
+
+        <%= f.submit class: "btn btn-secondary" %>
+<% end %>
