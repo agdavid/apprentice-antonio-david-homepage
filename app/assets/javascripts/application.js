@@ -15,4 +15,5 @@
 //= require jquery_ujs
 //= require map
 //= pagescroll
+//= nav
 //= require_tree .
