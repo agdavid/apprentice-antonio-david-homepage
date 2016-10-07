@@ -28,7 +28,7 @@
                       <%= question.printed_answer %>
                   <% else %>
                       ** This question needs to be answered:
-                      <%= link_to "Create Answer", new_answer_path, class: "btn btn-primary btn-sm" %> **
+                      <%= link_to "Create Answer", new_answer_path(question_id: question), class: "btn btn-primary btn-sm" %> **
                   <% end %>
               </div>
           </li>
