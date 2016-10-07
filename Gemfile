@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use for authentication
+gem 'devise'
 # Use for Bootstrap styline
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use for icons
