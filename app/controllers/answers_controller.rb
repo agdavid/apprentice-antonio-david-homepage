@@ -8,6 +8,13 @@ class AnswersController < ApplicationController
     end
 
     def create
+        @answer = current_user.answers.build(answer_params)
+        if @answer.save
+            flash[:success] = "Answer successfully created."
+            redirect_to answers_path
+        else
+            render "new"
+        end
     end
 
     def update
@@ -15,5 +22,10 @@ class AnswersController < ApplicationController
 
     def destroy
     end
+
+    private
+        def answer_params
+            params.require(:answer).permit(:content, :question_id, :user_id)
+        end
 
 end

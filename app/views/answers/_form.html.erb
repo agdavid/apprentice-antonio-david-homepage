@@ -17,5 +17,7 @@
             <%= f.text_area :content, class: "form-control", placeholder: "Enter answer here..." %>
         </div>
 
+        <%= f.hidden_field :question_id, value: @question.id %>
+
         <%= f.submit class: "btn btn-secondary" %>
 <% end %>
